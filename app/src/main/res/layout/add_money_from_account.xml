@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/f_add_creditcard_bank_spinner"
+            style="@style/SpinnerUGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_smallest" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last 6 digits of Account"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/f_addcreditcard_btn"
+            style="@style/MaterialButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_button_height"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/margin_25"
+            android:text="Add Money" />
+    </LinearLayout>
+</RelativeLayout>
+

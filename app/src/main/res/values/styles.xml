@@ -1,0 +1,67 @@
+<resources>
+
+
+    <style name="AppCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextViewSubhead" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+    <style name="SpinnerUGreen" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/ugreen_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/ugreen_list_selector_holo_light</item>
+    </style>
+
+    <style name="TextViewBody2" parent="@style/TextAppearance.AppCompat.Body2">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="MaterialButton" parent="@style/Base.Widget.AppCompat.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhiteText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_green_selector</item>
+        <item name="android:padding">@dimen/material_button_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/material_button_height</item>
+        <item name="android:layout_marginLeft">@dimen/material_button_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/material_button_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/material_button_margin_bottom</item>
+        <item name="android:minWidth">@dimen/material_button_min_width</item>
+        <item name="android:drawablePadding">@dimen/material_button_drawable_padding</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="TextViewCaptionBold" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textStyle">bold</item>
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+    <style name="TextViewCaption" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+</resources>

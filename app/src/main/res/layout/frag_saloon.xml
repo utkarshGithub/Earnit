@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    tools:context="info.androidhive.materialtabs.fragments.OneFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:padding="10dip"
+                android:text="Habib"
+                android:textSize="16dip"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/pay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAY" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

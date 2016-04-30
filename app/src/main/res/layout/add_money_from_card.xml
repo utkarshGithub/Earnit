@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter card number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="MM/NN"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Expiry Date" />
+        </LinearLayout>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/add_card_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/margin_smallest"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/radio_credit_card"
+                style="@style/TextViewSubhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4.0dip"
+                android:text="Credit Card" />
+
+            <CheckBox
+                android:id="@+id/radio_debit_card"
+                style="@style/TextViewSubhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:paddingLeft="4.0dip"
+                android:text="Debit Card" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/f_add_creditcard_bank_spinner"
+            style="@style/SpinnerUGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_smallest" />
+
+        <LinearLayout
+            android:id="@+id/debit_help_RL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_smallest"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/f_addcreditcard_btn"
+            style="@style/MaterialButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_button_height"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/margin_25"
+            android:text="Add Card" />
+    </LinearLayout>
+
+
+</RelativeLayout>
